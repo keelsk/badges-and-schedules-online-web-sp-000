@@ -4,5 +4,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-
-assert_select_encoded
+  attendees.each do |name|
+    badge_maker(name)
+  end
+end
